@@ -36,14 +36,6 @@ A brief description of the files in *data* is:
 
 
 
-Additional data sources used:
-- [C4 Corpus](https://github.com/allenai/c4-documentation)
-- [yelp.com Corpus](https://www.yelp.com/dataset)
-
-
-**Note:** The computed domain adapters could not be uploaded to GitHub due to size constraints. Find it on https://xxxx
-
-
 ### Code
 
 Includes all python files and notebooks subject to this paper.
@@ -52,13 +44,6 @@ A brief description of the files in *code* is:
 
 - **creation_of_paper_plots.ipynb**
     - This notebook can be used to recreate all plots present in the paper, based on the experimental results.
-
-- **run_clm_adapter.py**
-    - This script is based on the *run_clm.py* script of the Adapter Hub, which can be found [here](https://github.com/Adapter-Hub/adapter-transformers/tree/master/examples/language-modeling). It is used to train the domain adapters using a causal language modeling loss.
-- **run_mlm_adapter.py**
-    - This script is based on the *run_mlm.py* script of the Adapter Hub, which can be found [here](https://github.com/Adapter-Hub/adapter-transformers/tree/master/examples/language-modeling). It is used to train the domain adapters using a masked language modeling loss.
-
-
 
 
 ------------------------
