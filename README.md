@@ -49,7 +49,7 @@ A brief description of the files in *code* is:
 ------------------------
 ## References
 
-Please use the following bibtex entry if you use this model in your project (TBD):
+Please use the following bibtex entry to cite us:
  
 ```bib
 @inproceedings{,
