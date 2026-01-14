@@ -166,10 +166,10 @@ def main(
                     batch_prompts = templated_msgs[i:i + batch_size]
 
                     input_texts = []
-                    batch_image_lists = []   # List[List[PIL.Image]] — one list per conversation
+                    batch_image_lists = [] 
 
                     for conv in batch_prompts:
-                        # 1) Build the text with the chat template
+
                         txt = processor.apply_chat_template(
                             conv,
                             tokenize=False,
@@ -177,15 +177,15 @@ def main(
                         )
                         input_texts.append(txt)
 
-                        # 2) Load all images referenced in this conv
-                        imgs, _ = process_vision_info(conv)   # imgs: List[PIL.Image]
+
+                        imgs, _ = process_vision_info(conv)   
                         imgs = resize_images(imgs, max_dim=448)
                         batch_image_lists.append(imgs)
 
                     if any(len(lst) > 0 for lst in batch_image_lists):
                         inputs = processor(
                             text=input_texts,
-                            images=batch_image_lists,     # matches all {"type":"image"} items in each conv
+                            images=batch_image_lists,    
                             return_tensors="pt",
                             padding=True,
                             truncation=True
