@@ -7,7 +7,6 @@ import os
 import logging
 import pandas as pd
 from tqdm import tqdm
-from torchmetrics.functional.multimodal import clip_score
 from functools import partial
 import time 
 import fire

@@ -11,6 +11,8 @@ python3 get_answers_openai.py \
     --output_path $REPO/$GEN_MODEL/{$EXPERIMENT}.csv \
     --task "annotation_prompt_2" \
     --caching_path $REPO/cache_dir \
+    --few_shot True \
+    --instruct True \
     --n_batches 5 \
     --start_batch 0 \
     --max_workers 5 \
